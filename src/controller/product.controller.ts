@@ -11,6 +11,12 @@ async function inserProduct(req: Request, res: Response): Promise<Response> {
   return res.status(mapStatusHTTP(status)).json(data);
 }
 
+async function AllProducts(_req: Request, res: Response): Promise<Response> {
+  const { status, data } = await productService.AllProducts();
+  return res.status(mapStatusHTTP(status)).json(data);
+}
+
 export default {
   inserProduct,
+  AllProducts,
 };
