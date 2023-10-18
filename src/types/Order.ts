@@ -10,6 +10,6 @@ export type OrderResponse = {
   productIds: ProductId[] | number[]
 };
 
-type ProductId = {
+export type ProductId = {
   id: number;
 };
