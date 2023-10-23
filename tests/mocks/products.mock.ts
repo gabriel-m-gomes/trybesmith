@@ -5,10 +5,36 @@ const bodySuccessful = {
 }
 
 const bodyFail = {
-   name: "",
+  name: "",
   price: "",
   orderId: 0
 }
+
+const bodyEmptyName = {
+  name: "",
+  price: "30 peças de ouro",
+  orderId: 4
+}
+
+const bodyNameTypeof = {
+  name: 1,
+  price: "30 peças de ouro",
+  orderId: 4
+}
+
+const bodyNameLength = {
+  name: "sa",
+  price: "30 peças de ouro",
+  orderId: 4
+}
+
+const bodyEmptyPrice = {
+  name: "Machado",
+  price: "",
+  orderId: 4
+}
+
+
 
 const AllProducts = [
   {
@@ -31,4 +57,8 @@ export default {
   bodySuccessful,
   bodyFail,
   AllProducts,
+  bodyEmptyName,
+  bodyEmptyPrice,
+  bodyNameTypeof,
+  bodyNameLength,
 }
